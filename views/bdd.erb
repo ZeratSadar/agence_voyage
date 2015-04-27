@@ -1,0 +1,13 @@
+<div id="tab">
+	<% @dota.each do |d| %> <!-- Tous Ecrire a ca creation --> 
+		<div class="row tr">
+			<div class="col-xs-12 col-sm-3 col-md-3"><span class="maj"><%= d.nom %></span></div>
+			<div class="col-xs-12 col-sm-3 col-md-3"><span class="maj"><%= d.prenom %></span></div>
+			<div class="col-xs-12 col-sm-4 col-md-4"><%= d.adresse %>, <%= d.cp %> <span class="maj"><%= d.ville %></span></div>
+			<div class="col-xs-12 col-sm-2 col-md-2"><span class="country"><%= d.pays %></span></div>
+		</div>
+	<% end %>
+</div>
+<p>
+	<a class="btn btn-lg btn-primary" href="./" role="button">Revenir a l'accueil</a>
+</p>
